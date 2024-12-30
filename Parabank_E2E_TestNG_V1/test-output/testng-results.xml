@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-30T21:21:50 IST" name="Default suite" finished-at="2024-12-30T21:21:58 IST" duration-ms="7977">
+    <groups>
+    </groups>
+    <test started-at="2024-12-30T21:21:50 IST" name="Default test" finished-at="2024-12-30T21:21:58 IST" duration-ms="7977">
+      <class name="com.bank.tests.RegistrationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.tests.RegistrationTest@73a1e9a9]" started-at="2024-12-30T21:21:50 IST" name="setup" finished-at="2024-12-30T21:21:53 IST" duration-ms="3572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registration_Test()[pri:0, instance:com.bank.tests.RegistrationTest@73a1e9a9]" started-at="2024-12-30T21:21:53 IST" name="registration_Test" finished-at="2024-12-30T21:21:58 IST" duration-ms="4289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration_Test -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:com.bank.tests.RegistrationTest@73a1e9a9]" started-at="2024-12-30T21:21:58 IST" name="tear_down" finished-at="2024-12-30T21:21:58 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- com.bank.tests.RegistrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
