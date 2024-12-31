@@ -64,6 +64,7 @@ public class RegistrationPage extends BasePage {
 		bc.set_TextTo(city, city1);
 		bc.set_TextTo(state, state1);
 		bc.set_TextTo(zipCode, zipCode1);
+		bc.set_TextTo(phone, phonenumber);
 		bc.set_TextTo(ssn, ssn1);
 		bc.set_TextTo(userName, username);
 		bc.set_TextTo(password, passwrd);
