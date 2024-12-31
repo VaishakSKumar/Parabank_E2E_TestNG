@@ -5,9 +5,9 @@
     <classes>
       <class name="com.bank.tests.RegistrationTest">
         <methods>
+          <include name="tear_down"/>
           <include name="setup"/>
           <include name="registration_Test"/>
-          <include name="tear_down"/>
         </methods>
       </class> <!-- com.bank.tests.RegistrationTest -->
     </classes>

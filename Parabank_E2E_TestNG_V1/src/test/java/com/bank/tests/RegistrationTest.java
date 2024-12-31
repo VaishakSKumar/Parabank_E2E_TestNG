@@ -3,10 +3,12 @@ package com.bank.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import com.bank.base.BaseTest;
 import com.bank.pages.HomePage;
 import com.bank.pages.RegistrationPage;
 
-public class RegistrationTest extends BaseCamp{
+public class RegistrationTest extends BaseTest{
 	
 
 	public HomePage hp;

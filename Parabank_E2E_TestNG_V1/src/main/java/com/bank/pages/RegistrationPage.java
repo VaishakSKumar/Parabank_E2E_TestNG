@@ -2,16 +2,18 @@ package com.bank.pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
-
-import com.bank.base.BasePage;
 import com.bank.base.BaseTest;
+import com.bank.base.BasePage;
 
 public class RegistrationPage extends BasePage {
 	
-	BaseTest bt;
+	BaseTest bc;
 	public RegistrationPage(WebDriver driver) {
 		super(driver);
-		 bt=new BaseTest(driver);
+		bc=new BaseTest();
+		bc.driver=driver;
+		
+		 
 	}
 	
 	
@@ -56,21 +58,21 @@ public class RegistrationPage extends BasePage {
 	
 	public void fillRegistrationDetails(String fname,String lname,String addressline,String city1,String state1,String zipCode1,String phonenumber,String ssn1,String username,String passwrd) {
 		
-		bt.set_TextTo(firstName, fname);
-		bt.set_TextTo(lastName, lname);
-		bt.set_TextTo(address, addressline);
-		bt.set_TextTo(city, city1);
-		bt.set_TextTo(state, state1);
-		bt.set_TextTo(zipCode, zipCode1);
-		bt.set_TextTo(ssn, ssn1);
-		bt.set_TextTo(userName, username);
-		bt.set_TextTo(password, passwrd);
-		bt.set_TextTo(confirmPassword, passwrd);
+		bc.set_TextTo(firstName, fname);
+		bc.set_TextTo(lastName, lname);
+		bc.set_TextTo(address, addressline);
+		bc.set_TextTo(city, city1);
+		bc.set_TextTo(state, state1);
+		bc.set_TextTo(zipCode, zipCode1);
+		bc.set_TextTo(ssn, ssn1);
+		bc.set_TextTo(userName, username);
+		bc.set_TextTo(password, passwrd);
+		bc.set_TextTo(confirmPassword, passwrd);
 	}
 	
 	public void click_registernowButton() {
-		bt.click_button(register_button);
-		bt.waitforElement(userVerification, 30);
+	register_button.click();
+		bc.waitforElement(userVerification, 30);
 		
 	}
 	

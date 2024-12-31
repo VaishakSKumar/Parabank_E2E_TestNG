@@ -3,17 +3,16 @@ package com.bank.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
-
 import com.bank.base.BasePage;
-import com.bank.base.BaseTest;
+
 
 public class HomePage extends BasePage {
 	
-	BaseTest bt;
+	
 	
 	public HomePage(WebDriver driver){
 		super(driver);
-		 bt=new BaseTest(driver);
+		
 	}
 
 	
@@ -26,11 +25,11 @@ public class HomePage extends BasePage {
 	
 	
 	public void click_Forgotlogin() {
-		bt.click_button(Forgotlogininfo);
+		Forgotlogininfo.click();
 	}
 	
 	public void click_registrButton() {
-		bt.click_button(Register_button);
+		Register_button.click();
 	}
 	
 	
